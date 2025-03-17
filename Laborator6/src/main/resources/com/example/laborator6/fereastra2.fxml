@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" prefHeight="329.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laborator6.Fereastra2Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+            <children>
+                <TableView fx:id="FriendshipTableView" prefHeight="300.0" prefWidth="327.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="idFriendshipCol" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="NameFriendshipColumn" prefWidth="75.0" text="Nume" />
+                        <TableColumn fx:id="PrenumeFriendshipColumn" prefWidth="75.0" text="Prenume" />
+                        <TableColumn fx:id="FriendsFromColumn" prefWidth="112.79999084472655" text="Friends From" />
+                    </columns>
+                </TableView>
+            <Button layoutY="301.0" mnemonicParsing="false" onAction="#onDeleteButtonAction" prefHeight="26.0" prefWidth="150.0" text="Delete" />
+            <Button layoutX="151.0" layoutY="302.0" mnemonicParsing="false" onAction="#onChatButtonAction" prefHeight="26.0" prefWidth="126.0" text="Chat" />
+            </children>
+        </AnchorPane>
+
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="359.0" prefWidth="345.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Label layoutX="6.0" layoutY="31.0" prefHeight="26.0" prefWidth="66.0" text="Nume:" />
+                <TextField fx:id="numeF" layoutX="67.0" layoutY="31.0" prefHeight="26.0" prefWidth="168.0" />
+
+                <Label layoutX="6.0" layoutY="71.0" prefHeight="26.0" prefWidth="66.0" text="Prenume:" />
+                <TextField fx:id="prenumeF" layoutX="67.0" layoutY="71.0" prefHeight="26.0" prefWidth="168.0" />
+
+                <Button layoutX="54.0" layoutY="107.0" mnemonicParsing="false" onAction="#onAddButtonAction" prefHeight="26.0" prefWidth="138.0" text="Add New Friend" />
+
+                <TableView fx:id="RequestTableView" layoutX="-5.0" layoutY="146.0" prefHeight="154.0" prefWidth="389.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="idRequest" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="numeRequest" prefWidth="79.20001220703125" text="Nume" />
+                        <TableColumn fx:id="prenumeRequest" prefWidth="75.0" text="Prenume" />
+                        <TableColumn fx:id="dataRequest" prefWidth="75.0" text="Data" />
+                        <TableColumn fx:id="statusRequest" prefWidth="75.0" text="Status" />
+                    </columns>
+                </TableView>
+            <Button layoutX="76.0" layoutY="300.0" mnemonicParsing="false" onAction="#onAcceptedButtonAction" prefHeight="26.0" prefWidth="125.0" text="Accept" />
+            <Button layoutX="5.0" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="266.0" text="Afisare Prieteni Paginat" onAction="#onAfisarePrietenPaginatButton" />
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

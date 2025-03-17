@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laborator6.HelloController" prefHeight="283.0" prefWidth="489.0">
+   <children>
+      <VBox alignment="CENTER" spacing="10">
+         <children>
+            <Label layoutX="114.0" layoutY="78.0" prefHeight="25.0" prefWidth="60.0" text="Nume:" />
+            <TextField fx:id="numeField" layoutX="187.0" layoutY="82.0" />
+            <Label layoutX="116.0" layoutY="113.0" prefHeight="25.0" prefWidth="68.0" text="Prenume:" />
+            <TextField fx:id="prenumeField" layoutX="187.0" layoutY="117.0" />
+            <Label layoutX="114.0" layoutY="157.0" prefHeight="25.0" prefWidth="68.0" text="Parola:" />
+            <PasswordField fx:id="parolaField" layoutX="187.0" layoutY="161.0" />
+            <Button text="LOGIN" onAction="#onLoginButtonAction" />
+            <Label fx:id="errorMessage" layoutX="100" layoutY="300" text="" visible="false"/>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
