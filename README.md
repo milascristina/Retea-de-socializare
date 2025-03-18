@@ -14,10 +14,10 @@ After logging in, the user interface is split into two main sections:
 
 #### **Left Section: Friend List & Actions**
 - A table displays the user’s friends, including:
-  - **ID**
-  - **First Name**
-  - **Last Name**
-  - **Date of Friendship**
+  - ID
+  - First Name
+  - Last Name
+  - Date of Friendship
 - Below the table, there are two buttons:
   - **Delete**: Removes the selected user from the friend list.
   - **Chat**: Opens a new chat window with the selected user.
@@ -53,11 +53,4 @@ After logging in, the user interface is split into two main sections:
 1. Clone the repository.
 2. Set up a PostgreSQL database and update the connection details in the code.
 3. Run the JavaFX application.
-
-## Future Enhancements
-- Improve UI design with CSS styling.
-- Implement a search feature for friends.
-- Add group chat functionality.
-
-This application provides a simple yet powerful way to manage social connections and communicate in real-time. 🚀
 
